@@ -1,0 +1,392 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!91 &9100000
+AnimatorController:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 57_Heimerdinger_Einstein_Ani
+  m_AnimatorParameters:
+  - m_Name: run
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: idle
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: victory
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: death
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: birth
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: forceIdle
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: sk_e
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: sk_w
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: sk_attack01
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: sk_q
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: sk_attack02
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  m_AnimatorLayers:
+  - serializedVersion: 3
+    m_Name: Base Layer
+    m_StateMachine: {fileID: 1107894317163602714}
+    m_Mask: {fileID: 0}
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_StateMachineMotionSetIndex: 0
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+--- !u!1107 &1107894317163602714
+StateMachine:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Base Layer
+  m_DefaultState: {fileID: 0}
+  m_States:
+  - {fileID: 1102909824450708905}
+  - {fileID: 1102414196934814818}
+  - {fileID: 1102976892767376700}
+  - {fileID: 1102695180253639297}
+  - {fileID: 1102996572265966185}
+  - {fileID: 1102881257097721053}
+  - {fileID: 1102436236420300291}
+  - {fileID: 1102196076777474668}
+  - {fileID: 1102423485237621889}
+  m_ChildStateMachine: []
+  m_ChildStateMachinePosition: []
+  m_OrderedTransitions:
+  - first: {fileID: 1102909824450708905}
+    second: []
+  - first: {fileID: 1102414196934814818}
+    second:
+    - {fileID: 1101223660602779750}
+  - first: {fileID: 1102976892767376700}
+    second:
+    - {fileID: 1101932638165875638}
+  - first: {fileID: 1102695180253639297}
+    second: []
+  - first: {fileID: 1102996572265966185}
+    second:
+    - {fileID: 1101649378380387349}
+  - first: {fileID: 1102881257097721053}
+    second:
+    - {fileID: 1101426407305054693}
+  - first: {fileID: 1102436236420300291}
+    second:
+    - {fileID: 1101541883121316150}
+  - first: {fileID: 1102196076777474668}
+    second:
+    - {fileID: 1101224199441609257}
+  - first: {fileID: 1102423485237621889}
+    second:
+    - {fileID: 1101616756594752839}
+  m_MotionSetCount: 0
+  m_AnyStatePosition: {x: 0, y: -250, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+--- !u!1102 &1102909824450708905
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: victory
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 8e81ad9ba4f509b48b9ccaf9b8b6d8eb, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 0, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1102 &1102414196934814818
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: e
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 3f894d82055624d4290327148b6aa81f, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 250, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101223660602779750
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.29999977
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102976892767376700
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: w
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 2e888888339d5cb40917063ca28efd9f, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 500, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101932638165875638
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.29999995
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102695180253639297
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: death
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 9e07d5dc8401b094abb94b6c4453e94f, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 0, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1102 &1102996572265966185
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack01
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 020ebb441924aaf488eb94f48e6bc4bb, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 250, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101649378380387349
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102881257097721053
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: q
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 66429e0798d1e2f42a9c164e8f6cd2f1, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 500, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101426407305054693
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.37499982
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102436236420300291
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: idle
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: f80c7173e532af441841ddbbd9ec1e72, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 0, y: 500, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101541883121316150
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102196076777474668}
+  m_TransitionDuration: 0.18292683
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: run
+    m_EventTreshold: 0
+    m_ExitTime: 0
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102196076777474668
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: run
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: f0d50c8c678e4614a97ba57b2f030495, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 250, y: 500, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101224199441609257
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.3
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: idle
+    m_EventTreshold: 0
+    m_ExitTime: 0
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102423485237621889
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack02
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 68beb1c042aad4f4b86a8e37ccb7d040, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 500, y: 500, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101616756594752839
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102436236420300291}
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0

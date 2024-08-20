@@ -1,0 +1,4108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1511198457247033}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1511198457247033
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4560755460414528}
+  - 114: {fileID: 114696246349946661}
+  - 114: {fileID: 114594084538992516}
+  - 114: {fileID: 114878631869741590}
+  - 65: {fileID: 65115112454871360}
+  - 114: {fileID: 114393806886291156}
+  - 114: {fileID: 114852003912229955}
+  - 114: {fileID: 114688477195845053}
+  - 114: {fileID: 114019540703762368}
+  m_Layer: 0
+  m_Name: Vayne
+  m_TagString: Fightable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4560755460414528
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.031692, y: -0.5342541, z: 16.79498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4842205170039716}
+  - {fileID: 4005199267882760}
+  - {fileID: 4862089884451288}
+  - {fileID: 4726927227921259}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114696246349946661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e59e85ee86f27c46e7e4b69556b4cc, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114594084538992516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485e88bc694ba2a4aba6113bb0e135ab, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114878631869741590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85dcb873bff8196f258c18f298b29379, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  comradeDamageIndex: 0.5
+  comradeCtrlIndex: 0.5
+  comradeProtectIndex: -0.2
+  _isophoteDirect: {x: 0, y: 0, z: 0}
+  _minThreatDirect: {x: 0, y: 0, z: 0}
+--- !u!65 &65115112454871360
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &114393806886291156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d8cd92dee9bbfe27c6bb3a850180f42, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  threatOn: 2
+  damage: 0.1
+  control: 0.1
+  protection: 0
+  multiplier: 1
+  sizeX: 10
+  sizeY: 10
+  xCount: 0
+  yCount: 0
+  master: {fileID: 0}
+  indModel: {fileID: 0}
+  indShape: {fileID: 0}
+  threats: {}
+  DrawGizmo: 0
+--- !u!114 &114852003912229955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf541ee592b4a8186893560a2a4e59c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  _animator: {fileID: 0}
+  locked: 0
+  animLst:
+  - animName: run
+    effectLst: []
+  - animName: idle
+    effectLst: []
+  - animName: birth
+    effectLst: []
+  - animName: death
+    effectLst: []
+  - animName: victory
+    effectLst: []
+  - animName: sk_attack01
+    effectLst: []
+  - animName: sk_attack02
+    effectLst: []
+  - animName: sk_q
+    effectLst: []
+  - animName: sk_e
+    effectLst: []
+  - animName: forceIdle
+    effectLst: []
+  animCombinationLst: []
+  nowAnimCombination: -1
+  animIndex: -1
+  animSpeed: 1
+  animStartTime: 0
+  animAtomStartTime: 0
+  animTime: 0
+  _status: 0
+  nowAnimIndex: 1
+--- !u!114 &114688477195845053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f814401de4868574b734fe35b4e3463, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  animatorLst:
+  - id: a0
+    ani: {fileID: 9100000, guid: a8af2e22e896020418c629a80d348fea, type: 2}
+  - id: a1
+    ani: {fileID: 9100000, guid: 592bed68a33e3e64da1d292746a51019, type: 2}
+--- !u!114 &114019540703762368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511198457247033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b23527b8f3c0d0fee044dc80f01343, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillBanLst:
+  sb_R: {fileID: 114279162024939071}
+  buff0: {fileID: 114742761235697051}
+  buff1: {fileID: 114825485239575434}
+--- !u!1 &1381511780076166
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4842205170039716}
+  - 114: {fileID: 114657781061953285}
+  - 114: {fileID: 114219323703827573}
+  - 114: {fileID: 114078277709273338}
+  m_Layer: 0
+  m_Name: SkillManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4842205170039716
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381511780076166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4033448564140384}
+  - {fileID: 4316345448450820}
+  - {fileID: 4745995136998140}
+  - {fileID: 4695913147604242}
+  - {fileID: 4362062125491754}
+  - {fileID: 4092675389797407}
+  - {fileID: 4491882018932102}
+  m_Father: {fileID: 4560755460414528}
+  m_RootOrder: 0
+--- !u!114 &114657781061953285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381511780076166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3e93ca76e136740fc2365ea484ebf6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  _skillHolding: {fileID: 0}
+  _targetHolding: {fileID: 0}
+  currentCasting: {fileID: 0}
+  isQuitCast: 0
+  InitOpenSkill:
+  - {fileID: 114226194742390806}
+  InitCloseSkill:
+  - {fileID: 114257275089085069}
+  locked: 0
+--- !u!114 &114219323703827573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381511780076166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a133a2f68a67d24fb5269a3fd3ffe9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+--- !u!114 &114078277709273338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381511780076166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c85ec34b5f4471f89cfe7633d0bdb3d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+--- !u!1 &1741951263038434
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4033448564140384}
+  - 114: {fileID: 114226194742390806}
+  - 114: {fileID: 114543354014979087}
+  - 82: {fileID: 82114119544781231}
+  m_Layer: 0
+  m_Name: attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4033448564140384
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741951263038434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.048192024, y: 1.221496, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4962970131366111}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 0
+--- !u!114 &114226194742390806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741951263038434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114543354014979087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741951263038434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a282924c572a23e8d700665136d953a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!82 &82114119544781231
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741951263038434}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: e1cc0c398f4960d44b0fc14b11e71db7, type: 2}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 105
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1212334684794923
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4962970131366111}
+  - 114: {fileID: 114223347855263866}
+  - 114: {fileID: 114253401465105328}
+  - 114: {fileID: 114061024065337667}
+  m_Layer: 0
+  m_Name: HaveR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4962970131366111
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212334684794923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4710045680140046}
+  - {fileID: 4701689894130592}
+  m_Father: {fileID: 4033448564140384}
+  m_RootOrder: 0
+--- !u!114 &114223347855263866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212334684794923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ca7e1eff7742183b3b114ec0077b7e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  lifeTime: 0.1
+  ifCostBuff: 0
+  buffID: Vayan_R_Buff
+  needNum: 1
+--- !u!114 &114253401465105328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212334684794923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af87225ded5bca42f8af9f88a1235cd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114061024065337667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212334684794923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af87225ded5bca42f8af9f88a1235cd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1287653190781976
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4710045680140046}
+  - 114: {fileID: 114789941786962059}
+  - 114: {fileID: 114852143058333023}
+  - 114: {fileID: 114150138013879647}
+  - 114: {fileID: 114569861546367600}
+  m_Layer: 0
+  m_Name: Fly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4710045680140046
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287653190781976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4382075210195957}
+  m_Father: {fileID: 4962970131366111}
+  m_RootOrder: 0
+--- !u!114 &114789941786962059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287653190781976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb4d22341a22eb5f13770838bbcbc3b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114852143058333023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287653190781976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114150138013879647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287653190781976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Fly|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!114 &114569861546367600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287653190781976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175851d76baf6b4b78108d8b85fe2a18, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  isActive: 0
+  target: {fileID: 0}
+  speed: 20
+  gravity: 0
+  targetPositionRandomLimt: {x: 0, y: 0, z: 0}
+  isOnGround: 0
+--- !u!1 &1461581532759622
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4382075210195957}
+  - 114: {fileID: 114460487154702410}
+  - 82: {fileID: 82572521283976006}
+  - 114: {fileID: 114699719358570815}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4382075210195957
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461581532759622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4710045680140046}
+  m_RootOrder: 0
+--- !u!114 &114460487154702410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461581532759622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  manaRetrieve: 1
+  ADMultiplier: 1
+  APMultiplier: 0
+  extraDamage: 0
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 0
+    lifeSteal: 1
+    criticalStrike: 1
+    blind: 0
+    spellVamp: 0
+    attackEffect: 1
+    isCast: 0
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!82 &82572521283976006
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461581532759622}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 3b03b3eaf4b8f404fb2def09ca6922c0, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114699719358570815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461581532759622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Damage|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1765569803348550
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4701689894130592}
+  - 114: {fileID: 114045696891045389}
+  - 114: {fileID: 114690027373381459}
+  - 114: {fileID: 114612499945653853}
+  - 114: {fileID: 114179062384357684}
+  m_Layer: 0
+  m_Name: FlyR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4701689894130592
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765569803348550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4114841738030557}
+  m_Father: {fileID: 4962970131366111}
+  m_RootOrder: 1
+--- !u!114 &114045696891045389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765569803348550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb4d22341a22eb5f13770838bbcbc3b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114690027373381459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765569803348550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114612499945653853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765569803348550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|FlyR|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!114 &114179062384357684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765569803348550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175851d76baf6b4b78108d8b85fe2a18, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  isActive: 0
+  target: {fileID: 0}
+  speed: 20
+  gravity: 0
+  targetPositionRandomLimt: {x: 0, y: 0, z: 0}
+  isOnGround: 0
+--- !u!1 &1119668540018423
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4114841738030557}
+  - 114: {fileID: 114267638630894976}
+  - 82: {fileID: 82305754351344156}
+  - 114: {fileID: 114649875785218991}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4114841738030557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119668540018423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4701689894130592}
+  m_RootOrder: 0
+--- !u!114 &114267638630894976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119668540018423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  manaRetrieve: 1
+  ADMultiplier: 1
+  APMultiplier: 0
+  extraDamage: 0
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 0
+    lifeSteal: 1
+    criticalStrike: 1
+    blind: 0
+    spellVamp: 0
+    attackEffect: 1
+    isCast: 0
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!82 &82305754351344156
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119668540018423}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 3b03b3eaf4b8f404fb2def09ca6922c0, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 120
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114649875785218991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119668540018423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Damage|1
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1485598719389261
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4316345448450820}
+  - 114: {fileID: 114257275089085069}
+  - 114: {fileID: 114649633427910073}
+  - 114: {fileID: 114043714786901635}
+  - 114: {fileID: 114890670337573702}
+  - 82: {fileID: 82032921759535266}
+  m_Layer: 0
+  m_Name: attackWithQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4316345448450820
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.048192024, y: 1.0214963, z: 0.8742218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4311796974533966}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 1
+--- !u!114 &114257275089085069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114649633427910073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af87225ded5bca42f8af9f88a1235cd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114043714786901635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a6066b5ce2a8c7bf78281849a42fd7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  delay: 0
+  triggerCDWhenTurningOn: 1
+  toggleOn:
+  - A
+  - Q
+  toggleOff:
+  - AQ
+  delayLeftTime: 0
+--- !u!114 &114890670337573702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a94250e3e709dd483ae1dd34eabad94a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  lifeTime: 0
+  delay: 0
+  turnOffAgainOnDestroy: 0
+  turnOnAgainOnDestroy: 0
+  immediateMode: 0
+  turnOnLst: []
+  turnOffLst:
+  - Vayne|boneEffect_0
+  - Vayne|boneEffect_1
+  _status: 0
+  nowStatusLeftTime: 0
+  animSpeed: 0
+--- !u!82 &82032921759535266
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485598719389261}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: e1cc0c398f4960d44b0fc14b11e71db7, type: 2}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 105
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1470821151898444
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4311796974533966}
+  - 114: {fileID: 114661664681510063}
+  - 114: {fileID: 114229947630716511}
+  - 114: {fileID: 114556044496800867}
+  - 114: {fileID: 114146677587749255}
+  m_Layer: 0
+  m_Name: Fly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4311796974533966
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470821151898444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4590133360369098}
+  m_Father: {fileID: 4316345448450820}
+  m_RootOrder: 0
+--- !u!114 &114661664681510063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470821151898444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb4d22341a22eb5f13770838bbcbc3b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114229947630716511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470821151898444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114556044496800867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470821151898444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|AQ|Fly|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!114 &114146677587749255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470821151898444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175851d76baf6b4b78108d8b85fe2a18, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  isActive: 0
+  target: {fileID: 0}
+  speed: 20
+  gravity: 0
+  targetPositionRandomLimt: {x: 0, y: 0, z: 0}
+  isOnGround: 0
+--- !u!1 &1989296719254440
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4590133360369098}
+  - 114: {fileID: 114275153709109534}
+  - 114: {fileID: 114168729729062877}
+  - 82: {fileID: 82501994279657368}
+  - 114: {fileID: 114489513012720931}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4590133360369098
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989296719254440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4311796974533966}
+  m_RootOrder: 0
+--- !u!114 &114275153709109534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989296719254440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  manaRetrieve: 1
+  ADMultiplier: 1
+  APMultiplier: 0
+  extraDamage: 0
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 0
+    lifeSteal: 1
+    criticalStrike: 1
+    blind: 0
+    spellVamp: 0
+    attackEffect: 1
+    isCast: 0
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!114 &114168729729062877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989296719254440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f550c28f63ca9f831d7bf619a0dabd8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  Domain:
+  preDefineExtra:
+  lua_OnFirstEnable:
+  lua_OnLateEnable:
+  lua_OnFrameAfterEnable:
+  lua_OnPreDisable:
+  lua_OnDisable:
+  lua_OnClick:
+  ExtraSentence: []
+  dicKeys: []
+  dicValues: []
+  _trans: {fileID: 0}
+  _childrenSeq:
+    list: []
+  _parent: {fileID: 0}
+  Eigen:
+  lua_OnTimeSpan:
+  lua_OnHold:
+  lua_OnCommand: "local smName = 'SM_HitDamage'\nlocal smSkill = 'q'\nlocal parameter = 'parameter1'\n\n\n\nlocal sm = $:C(smName)\nif !:ContainsKey(smSkill) then \n\tlocal Qinfo = !:Child(smSkill)\n\tif Qinfo:ContainsKey('data') then\n\t\tlocal data = Qinfo:Child('data')\n\t\tif data:ContainsKey(parameter) then\n\t\t\tsm.ADMultiplier = data:Float(parameter) + 1\n\t\tend\n\tend\nend"
+  lua_OnParseData:
+  lua_OnRequestFailed:
+  lua_OnFrameSpan:
+  commandWaitForReturn: 0
+  blotOut: 0
+  _NameCode:
+  _SignOnAwake: 0
+  InspectorDepth: 0
+  dynamicLoad: 1
+  JsonPath: Unnamed
+  _ancestor: {fileID: 0}
+  _dynamicAncestor: {fileID: 0}
+  force_AtlasFolder:
+  force_TextureFolder:
+--- !u!82 &82501994279657368
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989296719254440}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 3b03b3eaf4b8f404fb2def09ca6922c0, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114489513012720931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989296719254440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|AQ|Damage|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1431517715725190
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4745995136998140}
+  - 114: {fileID: 114087057006156052}
+  - 114: {fileID: 114074555177578607}
+  - 114: {fileID: 114243282983031420}
+  - 114: {fileID: 114215700373502560}
+  - 114: {fileID: 114454978794993718}
+  - 114: {fileID: 114035965702394899}
+  - 82: {fileID: 82796217852023175}
+  - 114: {fileID: 114750520281363497}
+  m_Layer: 0
+  m_Name: Q
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4745995136998140
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4935406586612007}
+  - {fileID: 4832874976153042}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 2
+--- !u!114 &114087057006156052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114074555177578607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b978efcca9b29260e7d02a4572abed5a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114243282983031420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a6066b5ce2a8c7bf78281849a42fd7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  delay: 0
+  triggerCDWhenTurningOn: 0
+  toggleOn:
+  - AQ
+  toggleOff:
+  - A
+  - Q
+  delayLeftTime: 0
+--- !u!114 &114215700373502560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a6066b5ce2a8c7bf78281849a42fd7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  delay: 6
+  triggerCDWhenTurningOn: 1
+  toggleOn:
+  - A
+  - Q
+  toggleOff:
+  - AQ
+  delayLeftTime: 0
+--- !u!114 &114454978794993718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a94250e3e709dd483ae1dd34eabad94a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  lifeTime: 6.5
+  delay: 0.5
+  turnOffAgainOnDestroy: 1
+  turnOnAgainOnDestroy: 0
+  immediateMode: 0
+  turnOnLst:
+  - Vayne|boneEffect_0
+  - Vayne|boneEffect_1
+  turnOffLst: []
+  _status: 0
+  nowStatusLeftTime: 0
+  animSpeed: 0
+--- !u!114 &114035965702394899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a282924c572a23e8d700665136d953a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!82 &82796217852023175
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 8f76d3d4734720742ab2bec6b6bf5e83, type: 2}
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114750520281363497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431517715725190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5866f4add530270abea403fcaf1d265, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+--- !u!1 &1481264606749001
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4935406586612007}
+  - 114: {fileID: 114118787642538975}
+  - 114: {fileID: 114379438106542493}
+  m_Layer: 0
+  m_Name: Blink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4935406586612007
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481264606749001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4646371509865811}
+  m_Father: {fileID: 4745995136998140}
+  m_RootOrder: 0
+--- !u!114 &114118787642538975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481264606749001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfcc47aab3029bdef9bf59260a738ba, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  distance: 5
+  haveTime: 1
+  speed: 11
+  lifeTime: 0.3
+  haveTarget: 0
+  haveG: 0
+  upA: 5
+  hoverTime: 2
+  gravity: 10
+--- !u!114 &114379438106542493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481264606749001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1296882827555244
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4646371509865811}
+  - 114: {fileID: 114878227637479351}
+  m_Layer: 0
+  m_Name: SelfEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4646371509865811
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296882827555244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4935406586612007}
+  m_RootOrder: 0
+--- !u!114 &114878227637479351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296882827555244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb39e184cb5b4aab6a81ee2c8abc5b9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 6
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_Q_Effect
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 2
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+--- !u!1 &1021772394718335
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4832874976153042}
+  - 114: {fileID: 114858279623596496}
+  - 114: {fileID: 114918112801621060}
+  m_Layer: 0
+  m_Name: HaveBuff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4832874976153042
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1021772394718335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4189313228122890}
+  m_Father: {fileID: 4745995136998140}
+  m_RootOrder: 1
+--- !u!114 &114858279623596496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1021772394718335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ca7e1eff7742183b3b114ec0077b7e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  lifeTime: 0.1
+  ifCostBuff: 0
+  buffID: Vayan_R_Buff
+  needNum: 1
+--- !u!114 &114918112801621060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1021772394718335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1955407656399351
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4189313228122890}
+  - 114: {fileID: 114234263475776712}
+  m_Layer: 0
+  m_Name: Invisible
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4189313228122890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955407656399351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4832874976153042}
+  m_RootOrder: 0
+--- !u!114 &114234263475776712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955407656399351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bbafbfd9a947b32c208623d56b6df42, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 1.5
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_Q_Invisible
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 4
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+--- !u!1 &1629235150661299
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4695913147604242}
+  - 114: {fileID: 114264388967005407}
+  - 114: {fileID: 114185491574916532}
+  m_Layer: 0
+  m_Name: W
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4695913147604242
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629235150661299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4685708694997071}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 3
+--- !u!114 &114264388967005407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629235150661299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114185491574916532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629235150661299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1836259624525850
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4685708694997071}
+  - 114: {fileID: 114340506337617136}
+  - 114: {fileID: 114017741925796504}
+  m_Layer: 0
+  m_Name: W_Passive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4685708694997071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836259624525850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4001457283070987}
+  - {fileID: 4169462493845645}
+  m_Father: {fileID: 4695913147604242}
+  m_RootOrder: 0
+--- !u!114 &114340506337617136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836259624525850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a282924c572a23e8d700665136d953a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114017741925796504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836259624525850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736c64cae3e04f24eec7dda8923ee86d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 0
+  haveLifeTime: 0
+  lifeTime: 0
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_W_Passive
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 3
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+--- !u!1 &1067865861212150
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4001457283070987}
+  - 114: {fileID: 114929460371712510}
+  - 114: {fileID: 114503606765101828}
+  - 114: {fileID: 114535655769668724}
+  m_Layer: 0
+  m_Name: HaveBuff2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4001457283070987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067865861212150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4092147660985736}
+  m_Father: {fileID: 4685708694997071}
+  m_RootOrder: 0
+--- !u!114 &114929460371712510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067865861212150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ca7e1eff7742183b3b114ec0077b7e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  lifeTime: 0.1
+  ifCostBuff: 1
+  buffID: Vayan_W_Buff2
+  needNum: 1
+--- !u!114 &114503606765101828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067865861212150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a282924c572a23e8d700665136d953a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114535655769668724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067865861212150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1047365465823788
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4092147660985736}
+  - 114: {fileID: 114158244887228194}
+  - 114: {fileID: 114873140218742682}
+  - 114: {fileID: 114919350262961882}
+  m_Layer: 0
+  m_Name: HaveBuff1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4092147660985736
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047365465823788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4025322164143392}
+  - {fileID: 4844197355959337}
+  m_Father: {fileID: 4001457283070987}
+  m_RootOrder: 0
+--- !u!114 &114158244887228194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047365465823788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ca7e1eff7742183b3b114ec0077b7e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  lifeTime: 0.1
+  ifCostBuff: 1
+  buffID: Vayan_W_Buff1
+  needNum: 1
+--- !u!114 &114873140218742682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047365465823788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114919350262961882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047365465823788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1614205134401715
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4025322164143392}
+  - 114: {fileID: 114393885408295024}
+  - 114: {fileID: 114347159009292473}
+  m_Layer: 0
+  m_Name: Buff1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4025322164143392
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614205134401715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4092147660985736}
+  m_RootOrder: 0
+--- !u!114 &114393885408295024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614205134401715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb39e184cb5b4aab6a81ee2c8abc5b9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 6
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_W_Buff1
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 4
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+--- !u!114 &114347159009292473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614205134401715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Buff1|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 0
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1098398808718098
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4844197355959337}
+  - 114: {fileID: 114026445804023049}
+  - 114: {fileID: 114416574887683117}
+  - 114: {fileID: 114784592052892967}
+  m_Layer: 0
+  m_Name: Buff2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4844197355959337
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098398808718098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4092147660985736}
+  m_RootOrder: 1
+--- !u!114 &114026445804023049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098398808718098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb39e184cb5b4aab6a81ee2c8abc5b9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 6
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_W_Buff2
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 4
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+--- !u!114 &114416574887683117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098398808718098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Buff2|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 0
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!114 &114784592052892967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098398808718098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Buff2|1
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 0
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1142666868255394
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4169462493845645}
+  - 114: {fileID: 114732575893175152}
+  - 114: {fileID: 114609514077929025}
+  - 82: {fileID: 82738133417443309}
+  - 114: {fileID: 114899058851447063}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4169462493845645
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142666868255394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4685708694997071}
+  m_RootOrder: 1
+--- !u!114 &114732575893175152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142666868255394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  manaRetrieve: 1
+  ADMultiplier: 0
+  APMultiplier: 0
+  extraDamage: 0
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 2
+    lifeSteal: 0
+    criticalStrike: 0
+    blind: 0
+    spellVamp: 0
+    attackEffect: 0
+    isCast: 0
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!114 &114609514077929025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142666868255394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f550c28f63ca9f831d7bf619a0dabd8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  Domain:
+  preDefineExtra:
+  lua_OnFirstEnable:
+  lua_OnLateEnable:
+  lua_OnFrameAfterEnable:
+  lua_OnPreDisable:
+  lua_OnDisable:
+  lua_OnClick:
+  ExtraSentence: []
+  dicKeys: []
+  dicValues: []
+  _trans: {fileID: 0}
+  _childrenSeq:
+    list: []
+  _parent: {fileID: 0}
+  Eigen:
+  lua_OnTimeSpan:
+  lua_OnHold:
+  lua_OnCommand: "local smName = 'SM_HitDamage'\nlocal smSkill = 'w'\nlocal parameter = 'parameter1'\n\n\n\nlocal sm = $:C(smName)\nif !:ContainsKey(smSkill) then \n\tlocal Qinfo = !:Child(smSkill)\n\tif Qinfo:ContainsKey('data') then\n\t\tlocal data = Qinfo:Child('data')\n\t\tif data:ContainsKey(parameter) then\n\t\t\tsm.extraDamage = data:Float(parameter)\n\t\tend\t\t\n\t\tif data:ContainsKey('parameter2') then\n\t\t\tsm.extraMaxHP = data:Float('parameter2')\n\t\tend\n\tend\nend"
+  lua_OnParseData:
+  lua_OnRequestFailed:
+  lua_OnFrameSpan:
+  commandWaitForReturn: 0
+  blotOut: 0
+  _NameCode:
+  _SignOnAwake: 0
+  InspectorDepth: 0
+  dynamicLoad: 1
+  JsonPath: Unnamed
+  _ancestor: {fileID: 0}
+  _dynamicAncestor: {fileID: 0}
+  force_AtlasFolder:
+  force_TextureFolder:
+--- !u!82 &82738133417443309
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142666868255394}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 4169d395b30309544851ff653fa6eeae, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114899058851447063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142666868255394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|A|Damage|2
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1945257983972512
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4362062125491754}
+  - 114: {fileID: 114934664834132206}
+  - 114: {fileID: 114553331708450123}
+  - 82: {fileID: 82140480669696937}
+  m_Layer: 0
+  m_Name: E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4362062125491754
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945257983972512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.084897, z: 1.1858876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4245546087583811}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 4
+--- !u!114 &114934664834132206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945257983972512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114553331708450123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945257983972512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af87225ded5bca42f8af9f88a1235cd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!82 &82140480669696937
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945257983972512}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 3836b351d2c5061418d526ce632454a8, type: 2}
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1238267295278089
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4245546087583811}
+  - 114: {fileID: 114096251595385190}
+  - 114: {fileID: 114427121012832885}
+  - 114: {fileID: 114051926262762378}
+  - 114: {fileID: 114756563884289270}
+  - 114: {fileID: 114910805932417501}
+  m_Layer: 0
+  m_Name: Fly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4245546087583811
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4948817315730280}
+  - {fileID: 4789241888160887}
+  m_Father: {fileID: 4362062125491754}
+  m_RootOrder: 0
+--- !u!114 &114096251595385190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb4d22341a22eb5f13770838bbcbc3b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114427121012832885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114051926262762378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114756563884289270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|E|Fly|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!114 &114910805932417501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238267295278089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175851d76baf6b4b78108d8b85fe2a18, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  isActive: 0
+  target: {fileID: 0}
+  speed: 25
+  gravity: 0
+  targetPositionRandomLimt: {x: 0, y: 0, z: 0}
+  isOnGround: 0
+--- !u!1 &1523468808738340
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4948817315730280}
+  - 114: {fileID: 114788118349576292}
+  - 114: {fileID: 114270687292684555}
+  - 114: {fileID: 114052741944948062}
+  - 114: {fileID: 114146996163349894}
+  m_Layer: 0
+  m_Name: Push
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4948817315730280
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523468808738340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4752173232104494}
+  - {fileID: 4558421296814474}
+  - {fileID: 4561008430628481}
+  m_Father: {fileID: 4245546087583811}
+  m_RootOrder: 0
+--- !u!114 &114788118349576292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523468808738340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636223b9417568cd362b1cd32550425b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 1
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 0.2
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID:
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 1
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 1
+  pushSpeed: 30
+  haveTrigger: 0
+--- !u!114 &114270687292684555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523468808738340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114052741944948062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523468808738340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f915140a6e13824489c2da764355ce9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114146996163349894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523468808738340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623af016f757074fd4e1fea380240568, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1260577992900961
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4752173232104494}
+  - 114: {fileID: 114053432542517889}
+  - 114: {fileID: 114371077318508578}
+  m_Layer: 0
+  m_Name: Dizzy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4752173232104494
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260577992900961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4948817315730280}
+  m_RootOrder: 0
+--- !u!114 &114053432542517889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260577992900961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb39e184cb5b4aab6a81ee2c8abc5b9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 1.5
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_E_Dizzy
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 4
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 1
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 9
+--- !u!114 &114371077318508578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260577992900961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|E|Dizzy|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1150913721413693
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4558421296814474}
+  - 114: {fileID: 114858158124690141}
+  - 114: {fileID: 114911172418517602}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4558421296814474
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150913721413693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4948817315730280}
+  m_RootOrder: 1
+--- !u!114 &114858158124690141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150913721413693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  manaRetrieve: 3
+  ADMultiplier: 0.5
+  APMultiplier: 0
+  extraDamage: 185
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 0
+    lifeSteal: 0
+    criticalStrike: 0
+    blind: 0
+    spellVamp: 0
+    attackEffect: 0
+    isCast: 0
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!114 &114911172418517602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150913721413693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f550c28f63ca9f831d7bf619a0dabd8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  Domain:
+  preDefineExtra:
+  lua_OnFirstEnable:
+  lua_OnLateEnable:
+  lua_OnFrameAfterEnable:
+  lua_OnPreDisable:
+  lua_OnDisable:
+  lua_OnClick:
+  ExtraSentence: []
+  dicKeys: []
+  dicValues: []
+  _trans: {fileID: 0}
+  _childrenSeq:
+    list: []
+  _parent: {fileID: 0}
+  Eigen:
+  lua_OnTimeSpan:
+  lua_OnHold:
+  lua_OnCommand: "local smName = 'SM_HitDamage'\nlocal smSkill = 'e'\nlocal parameter = 'parameter1'\n\n\n\nlocal sm = $:C(smName)\nif !:ContainsKey(smSkill) then \n\tlocal Qinfo = !:Child(smSkill)\n\tif Qinfo:ContainsKey('data') then\n\t\tlocal data = Qinfo:Child('data')\n\t\tif data:ContainsKey(parameter) then\n\t\t\tsm.extraDamage = data:Float(parameter)\n\t\tend\n\t\tsm:SetADAP(data,'ad','ap')\n\tend\nend"
+  lua_OnParseData:
+  lua_OnRequestFailed:
+  lua_OnFrameSpan:
+  commandWaitForReturn: 0
+  blotOut: 0
+  _NameCode:
+  _SignOnAwake: 0
+  InspectorDepth: 0
+  dynamicLoad: 1
+  JsonPath: Unnamed
+  _ancestor: {fileID: 0}
+  _dynamicAncestor: {fileID: 0}
+  force_AtlasFolder:
+  force_TextureFolder:
+--- !u!1 &1535470373832283
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4561008430628481}
+  - 114: {fileID: 114181650596407654}
+  - 82: {fileID: 82744425536946775}
+  - 114: {fileID: 114363090377197760}
+  m_Layer: 0
+  m_Name: Bang
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4561008430628481
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535470373832283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4948817315730280}
+  m_RootOrder: 2
+--- !u!114 &114181650596407654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535470373832283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3d2abf1dee0dbd3a32e5ad1bf6b098, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  lifeTime: 2
+  tickInterval: 0
+  tickTimes: 1
+  firstTriggerDelay: 0
+  delayDestoryTime: 0
+--- !u!82 &82744425536946775
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535470373832283}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 2538cd447acb3564495e7c467f5f9951, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114363090377197760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535470373832283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|E|Bang|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1050731520524092
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4789241888160887}
+  - 114: {fileID: 114556754630456919}
+  - 114: {fileID: 114859747265443499}
+  - 82: {fileID: 82929358361263392}
+  - 114: {fileID: 114590362402686164}
+  m_Layer: 0
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4789241888160887
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050731520524092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4245546087583811}
+  m_RootOrder: 1
+--- !u!114 &114556754630456919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050731520524092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05374e24e9793d9ed36f185a93f011, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 1
+  manaRetrieve: 3
+  ADMultiplier: 0.5
+  APMultiplier: 0
+  extraDamage: 185
+  extraMaxHP: 0
+  extraLeftHP: 0
+  extraLostHP: 0
+  multiplier: 1
+  extraMultiplier: 1
+  otherDamage: 0
+  damageInfo:
+    damageType: 0
+    lifeSteal: 0
+    criticalStrike: 0
+    blind: 0
+    spellVamp: 1
+    attackEffect: 0
+    isCast: 1
+    isFenLieJian: 0
+  lifeTime: 1
+--- !u!114 &114859747265443499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050731520524092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f550c28f63ca9f831d7bf619a0dabd8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  Domain:
+  preDefineExtra:
+  lua_OnFirstEnable:
+  lua_OnLateEnable:
+  lua_OnFrameAfterEnable:
+  lua_OnPreDisable:
+  lua_OnDisable:
+  lua_OnClick:
+  ExtraSentence: []
+  dicKeys: []
+  dicValues: []
+  _trans: {fileID: 0}
+  _childrenSeq:
+    list: []
+  _parent: {fileID: 0}
+  Eigen:
+  lua_OnTimeSpan:
+  lua_OnHold:
+  lua_OnCommand: "local smName = 'SM_HitDamage'\nlocal smSkill = 'e'\nlocal parameter = 'parameter2'\n\n\n\nlocal sm = $:C(smName)\nif !:ContainsKey(smSkill) then \n\tlocal Qinfo = !:Child(smSkill)\n\tif Qinfo:ContainsKey('data') then\n\t\tlocal data = Qinfo:Child('data')\n\t\tif data:ContainsKey(parameter) then\n\t\t\tsm.extraDamage = data:Float(parameter)\n\t\tend\n\t\tsm:SetADAP(data,'ad','ap')\n\tend\nend"
+  lua_OnParseData:
+  lua_OnRequestFailed:
+  lua_OnFrameSpan:
+  commandWaitForReturn: 0
+  blotOut: 0
+  _NameCode:
+  _SignOnAwake: 0
+  InspectorDepth: 0
+  dynamicLoad: 1
+  JsonPath: Unnamed
+  _ancestor: {fileID: 0}
+  _dynamicAncestor: {fileID: 0}
+  force_AtlasFolder:
+  force_TextureFolder:
+--- !u!82 &82929358361263392
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050731520524092}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 560e1d96e9972da49a35b3e373fe43ff, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 110
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114590362402686164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050731520524092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|E|Damage|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1188080941838272
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4092675389797407}
+  - 114: {fileID: 114279162024939071}
+  - 114: {fileID: 114771794152294667}
+  - 114: {fileID: 114405853351993047}
+  - 82: {fileID: 82970573132547723}
+  m_Layer: 0
+  m_Name: R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4092675389797407
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188080941838272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4947445653265058}
+  - {fileID: 4247075749374945}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 5
+--- !u!114 &114279162024939071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188080941838272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114771794152294667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188080941838272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114405853351993047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188080941838272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!82 &82970573132547723
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188080941838272}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: c6209b88858c9144d8719dd976886787, type: 2}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 120
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1460944593488600
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4947445653265058}
+  - 114: {fileID: 114742761235697051}
+  - 114: {fileID: 114529791654388288}
+  - 82: {fileID: 82761633614247097}
+  - 114: {fileID: 114387629017270363}
+  m_Layer: 0
+  m_Name: AttackIncrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4947445653265058
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460944593488600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4092675389797407}
+  m_RootOrder: 0
+--- !u!114 &114742761235697051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460944593488600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866670b0c2ad986e42fe6e8323d6e087, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 12
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_R_AttackIncrease
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 3
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+  AttackIncreasePercentage: 1
+  AttackIncreaseExtra: 100
+  SpellIncreasePercentage: 1
+  SpellIncreaseExtra: 0
+--- !u!114 &114529791654388288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460944593488600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f550c28f63ca9f831d7bf619a0dabd8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  Domain:
+  preDefineExtra:
+  lua_OnFirstEnable:
+  lua_OnLateEnable:
+  lua_OnFrameAfterEnable:
+  lua_OnPreDisable:
+  lua_OnDisable:
+  lua_OnClick:
+  ExtraSentence: []
+  dicKeys: []
+  dicValues: []
+  _trans: {fileID: 0}
+  _childrenSeq:
+    list: []
+  _parent: {fileID: 0}
+  Eigen:
+  lua_OnTimeSpan:
+  lua_OnHold:
+  lua_OnCommand: "local smName = 'SM_AttackIncrease'\nlocal smSkill = 'r'\nlocal parameter = 'parameter1'\n\n\n\nlocal sm = $:C(smName)\nif !:ContainsKey(smSkill) then \n\tlocal Qinfo = !:Child(smSkill)\n\tif Qinfo:ContainsKey('data') then\n\t\tlocal data = Qinfo:Child('data')\n\t\tif data:ContainsKey(parameter) then\n\t\t\tsm.AttackIncreaseExtra = data:Float(parameter)\n\t\tend\n\tend\nend"
+  lua_OnParseData:
+  lua_OnRequestFailed:
+  lua_OnFrameSpan:
+  commandWaitForReturn: 0
+  blotOut: 0
+  _NameCode:
+  _SignOnAwake: 0
+  InspectorDepth: 0
+  dynamicLoad: 1
+  JsonPath: Unnamed
+  _ancestor: {fileID: 0}
+  _dynamicAncestor: {fileID: 0}
+  force_AtlasFolder:
+  force_TextureFolder:
+--- !u!82 &82761633614247097
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460944593488600}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 1f530f5f063a71a49984ab3d5aebd136, type: 2}
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 120
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114387629017270363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460944593488600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|R|AttackIncrease|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1829359581012661
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4247075749374945}
+  - 114: {fileID: 114825485239575434}
+  - 114: {fileID: 114365000155306751}
+  m_Layer: 0
+  m_Name: Change
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4247075749374945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829359581012661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4092675389797407}
+  m_RootOrder: 1
+--- !u!114 &114825485239575434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829359581012661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c241db5adc2e8f190f89e3d9aa57952, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 1
+  haveLifeTime: 1
+  lifeTime: 12
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_R_Buff
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 3
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+  A0: a0
+  A1: a1
+--- !u!114 &114365000155306751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829359581012661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9336ac6486428da37d61c524f002b95, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skillEffectName: Vayne|R|Change|0
+  nid: -1
+  shapeType: 0
+  setRate: 1
+  effectDelayDestroyTime: 1.5
+  isWorld: 0
+  isEquipSkillEffect: 0
+  toReplay: 1
+  changeSkillEffectName: 0
+  effect: {fileID: 0}
+  _master: {fileID: 0}
+  isActive: 0
+--- !u!1 &1116864700187187
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4491882018932102}
+  - 114: {fileID: 114008408701816326}
+  - 114: {fileID: 114370337017992308}
+  m_Layer: 0
+  m_Name: Passive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4491882018932102
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116864700187187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4732616446140621}
+  m_Father: {fileID: 4842205170039716}
+  m_RootOrder: 6
+--- !u!114 &114008408701816326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116864700187187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a1ea041e83cafba82c91c236a7c61, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114370337017992308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116864700187187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa79df1ed93caa43dfd49a5380c51c98, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1219764354658339
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4732616446140621}
+  - 114: {fileID: 114667664631455010}
+  m_Layer: 0
+  m_Name: Vayan_Passive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4732616446140621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219764354658339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4491882018932102}
+  m_RootOrder: 0
+--- !u!114 &114667664631455010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219764354658339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73c62f0fb8fecb2464cfe26330e0bf5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+  skill: {fileID: 0}
+  randID: 0
+  target: {fileID: 0}
+  nodeHash: 0
+  desc: Spawner Manager
+  canBeInterrupt: 0
+  destroyOnLifeEnding: 0
+  haveLifeTime: 0
+  lifeTime: 0
+  availableOnStructure: 0
+  lifeTimeLeft: 0
+  ignoreMagicImmue: 0
+  buffID: Vayan_Passive
+  buffIDUseSkillTempID: 0
+  onMultipleAdded: 3
+  maxDieJiaTimes: 0
+  isRelyOnBuff: 0
+  relyOnBuffID:
+  delayedDestroyTime: 0
+  buffType:
+    isDeBuff: 0
+    isHPInc: 0
+  buffPriority:
+    PriorityOnBeforeDeath: 0
+    PriorityOnBeforeEffectOn: 0
+  controlType: 0
+  speedAddNormal: 20
+  speedAddWithR: 60
+  searchRange: 8
+--- !u!1 &1924758096459231
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4005199267882760}
+  - 114: {fileID: 114506328351707893}
+  m_Layer: 0
+  m_Name: MoveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4005199267882760
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924758096459231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4560755460414528}
+  m_RootOrder: 1
+--- !u!114 &114506328351707893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924758096459231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c59f0bf6942b851686c5360660cb20, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1503186253094523
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4862089884451288}
+  - 114: {fileID: 114340902259888692}
+  m_Layer: 0
+  m_Name: Weakness
+  m_TagString: Weakness
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4862089884451288
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503186253094523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4560755460414528}
+  m_RootOrder: 2
+--- !u!114 &114340902259888692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503186253094523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e39b4d61af36aea1d5990c82dc246b2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  inLateEnable: 0
+--- !u!1 &1223312274344292
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4726927227921259}
+  - 114: {fileID: 114060058064401260}
+  m_Layer: 30
+  m_Name: shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4726927227921259
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223312274344292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4560755460414528}
+  m_RootOrder: 3
+--- !u!114 &114060058064401260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223312274344292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3beca92b15543822e6f13dbe9d53786, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  maxProjectionDistance: 15
+  girth: 0.8
+  shadowHoverHeight: 0.2
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  shadowMaterial: {fileID: 2100000, guid: 2b601c76cd048ef44bccbb47a77a374d, type: 2}
+  isStatic: 0
+  useLightSource: 0
+  lightSource: {fileID: 0}
+  lightDirection: {x: 0, y: -1, z: 0}
+  isPerspectiveProjection: 0
+  doVisibilityCulling: 1
+  uvs:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1

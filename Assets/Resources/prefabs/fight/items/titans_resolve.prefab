@@ -1,0 +1,848 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &821630012981196604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6273188921497765433}
+  - component: {fileID: 7619861187992274876}
+  m_Layer: 0
+  m_Name: titans_resolve
+  m_TagString: ItemPassive
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6273188921497765433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821630012981196604}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6666669, y: 1.6666669, z: 1.6666669}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8771910231680104090}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7619861187992274876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821630012981196604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2698016ad2008843b0d1459c2b51c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: {fileID: 0}
+  _currentState: {fileID: 0}
+  _stateCtrl: {fileID: 0}
+  _anim: {fileID: 0}
+  _skills: {fileID: 0}
+  _buffs: {fileID: 0}
+  _moveManager: {fileID: 0}
+  _hpBar: {fileID: 0}
+  _weakness: {fileID: 0}
+  _dragDrop: {fileID: 0}
+  _items: {fileID: 0}
+  effectCouldInterrupt: 1
+  audioCouldInterrupt: 1
+  isActive: 0
+  target: {fileID: 0}
+  couldInterruptOnCastingTime: 0
+  nowState: 0
+  nowStateLeftTime: 0
+  _audioLst: []
+  _manager: {fileID: 0}
+  _skillSpawners: []
+  _animTime: 0
+  isTriggered: 0
+  _details:
+    condition: 0
+    skillRange: 0
+    targetFilter: 0
+    needTarget: 0
+    canUseSelf: 0
+    canBeSilenced: 0
+    searchAmong: 0
+    isTriggerChAnim: 0
+    isScaleAnimWithAS: 0
+    couldInterrupt: 0
+    canMoveWhenCast: 0
+    delayTrigger: 0
+    canCrit: 0
+    hitDamage:
+      hitOn: 0
+      aoeRange: 0
+      aoeMultiplier: 0
+      damageType: 0
+      lifeSteal: 0
+      spellVamp: 0
+      ad: []
+      ap: []
+      trueDmg: []
+      adMultiplier: []
+      apMultiplier: []
+      adCanChange: 0
+      apCanChange: 0
+      trueDmgCanChange: 0
+      adMultiplierCanChange: 0
+      apMultiplierCanChange: 0
+    followTarget:
+      speedFly: 0
+      triggerOnHit: 0
+      hitRange: 0
+    fixedDirection:
+      activeDistance: 0
+      speedFly: 0
+      triggerOnHit: 0
+      hitRange: 0
+    flyOutAndBack:
+      activeDistance: 0
+      speedFly: 0
+      triggerOnHit: 0
+      hitRange: 0
+    bounce:
+      maxBounces: 
+      maxBounceCanChange: 0
+      speedFly: 0
+      bounceRange: 0
+      triggerOnHit: 0
+    aoe:
+      aoePos: 0
+      aoeRange: 0
+      maxHitNum: 0
+      lifeTime: 0
+      triggerOnHit: 0
+      canHitMultiTime: 0
+    channelling:
+      timeChanneling: 0
+      tickInterval: 0
+      tickTimes: 0
+      triggerRightAway: 0
+    crowdControl:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      controlType: 0
+    heal:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      healing: []
+      extraMaxHpPercentage: []
+      extraCurrentHpPercentage: []
+      extraMissingHpPercentage: []
+      healingCanChange: 0
+      extraMaxHpPercentageCanChange: 0
+      extraCurrentHpPercentageCanChange: 0
+      extraMissingHpPercentageCanChange: 0
+    shield:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      maxHit: 
+      maxHitCanChange: 0
+      shieldAmount: []
+      extraMaxHpPercentage: []
+      extraCurrentHpPercentage: []
+      extraMissingHpPercentage: []
+      extraADPercentage: []
+      extraAPPercentage: []
+      shieldAmountCanChange: 0
+      extraMaxHpPercentageCanChange: 0
+      extraCurrentHpPercentageCanChange: 0
+      extraMissingHpPercentageCanChange: 0
+      extraADPercentageCanChange: 0
+      extraAPPercentageCanChange: 0
+    dodge:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      dodgeLifetime: []
+      dodgeLifetimeCanChange: 0
+    increaseCritChance:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      criticalChanceAdd: []
+      criticalChanceAddCanChange: 0
+    increaseCritDMG:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      criticalDamageAdd: []
+      criticalDamageAddCanChange: 0
+    increaseAD:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      attackDamageAdd: []
+      attackDamageMult: []
+      attackDamageAddCanChange: 0
+      attackDamageMultCanChange: 0
+    increaseAP:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      abilityDamageAdd: []
+      abilityDamageMult: []
+      abilityDamageAddCanChange: 0
+      abilityDamageMultCanChange: 0
+    increaseAS:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      attackSpeedMult: []
+      attackSpeedMultCanChange: 0
+    increaseAR:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      armorAdd: []
+      armorMult: []
+      armorAddCanChange: 0
+      armorMultCanChange: 0
+    increaseMR:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      magicResistanceAdd: []
+      magicResistanceMult: []
+      magicResistanceAddCanChange: 0
+      magicResistanceMultCanChange: 0
+    decreaseAS:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      attackSpeedMult: []
+      attackSpeedMultCanChange: 0
+    decreaseAR:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      armorAdd: []
+      armorMult: []
+      armorAddCanChange: 0
+      armorMultCanChange: 0
+    decreaseMR:
+      buffID: 
+      buffOn: 0
+      buffRange: 0
+      maxHitNum: 0
+      haveLifeTime: 0
+      lifeTime: []
+      destroyOnLifeEnding: 0
+      addType: 0
+      maxStackUp: 0
+      lifeTimeCanChange: 0
+      magicResistanceAdd: []
+      magicResistanceMult: []
+      magicResistanceAddCanChange: 0
+      magicResistanceMultCanChange: 0
+--- !u!1 &4790644737175147194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8771910231680104090}
+  - component: {fileID: 5503351758683353335}
+  - component: {fileID: 2548396653825492822}
+  - component: {fileID: 60518930447391040}
+  - component: {fileID: 2150502977171065262}
+  - component: {fileID: 4837876995417705603}
+  - component: {fileID: 4957716010189743833}
+  - component: {fileID: 7739312077368003247}
+  m_Layer: 0
+  m_Name: titans_resolve
+  m_TagString: Item
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8771910231680104090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -11.02, y: 0.866, z: -8.05}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6273188921497765433}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!33 &5503351758683353335
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2548396653825492822
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b18231d784de53c4588acbba127203b3, type: 2}
+  - {fileID: 2100000, guid: 1dbbbc1c1f077184ebe3809928e929e6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &60518930447391040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2150502977171065262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25b2e73aefcdbe4c88ed8095011b4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: {fileID: 0}
+  _currentState: {fileID: 0}
+  _stateCtrl: {fileID: 0}
+  _anim: {fileID: 0}
+  _skills: {fileID: 0}
+  _buffs: {fileID: 0}
+  _moveManager: {fileID: 0}
+  _hpBar: {fileID: 0}
+  _weakness: {fileID: 0}
+  _dragDrop: {fileID: 0}
+  _items: {fileID: 0}
+  _item:
+    _id: 65d49f9dec041c3cf02eabfe
+    idItem: titans_resolve
+    name: "Quy\u1EC1n N\u0103ng Kh\u1ED5ng L\u1ED3"
+    icon: Titans_Resolve_TFT_item
+    stats:
+    - typeStat: 2
+      amount: 0.1
+      typeBuff: 2
+    - typeStat: 4
+      amount: 20
+      typeBuff: 1
+    descriptionStat: <sprite name=as_icon> +10%  <sprite name=ar_icon> +20
+    descriptionPassive: "Nh\u1EADn 2% S\u1EE9c M\u1EA1nh C\xF4ng K\xEDch v\xE0 2
+      S\u1EE9c Manh Ph\xE9p Thu\u1EADt khi t\u1EA5n c\xF4ng ho\u1EB7c nh\u1EADn s\xE1t
+      th\u01B0\u01A1ng, c\u1ED9ng d\u1ED3n t\u1ED1i \u0111a 25 l\u1EA7n.\nKhi \u0111\u1EA1t
+      t\u1ED1i \u0111a c\u1ED9ng d\u1ED3n, nh\u1EADn th\xEAm 25 Gi\xE1p v\xE0 25
+      Kh\xE1ng Ph\xE9p."
+    typeItem: 1
+    slotRequired: 1
+    isUnique: 0
+    recipe:
+      bf_sword: 
+      recurve_bow: 
+      chain_vest: 
+      negatron_cloak: 
+      needlessly_large_rod: 
+      tear_of_the_goddess: 
+      giants_belt: 
+      sparring_gloves: 
+    passive:
+      condition: 0
+      skillRange: 0
+      targetFilter: 0
+      needTarget: 0
+      canUseSelf: 0
+      canBeSilenced: 0
+      searchAmong: 0
+      isTriggerChAnim: 0
+      isScaleAnimWithAS: 0
+      couldInterrupt: 0
+      canMoveWhenCast: 0
+      delayTrigger: 0
+      canCrit: 0
+      hitDamage:
+        hitOn: 0
+        aoeRange: 0
+        aoeMultiplier: 0
+        damageType: 0
+        lifeSteal: 0
+        spellVamp: 0
+        ad: []
+        ap: []
+        trueDmg: []
+        adMultiplier: []
+        apMultiplier: []
+        adCanChange: 0
+        apCanChange: 0
+        trueDmgCanChange: 0
+        adMultiplierCanChange: 0
+        apMultiplierCanChange: 0
+      followTarget:
+        speedFly: 0
+        triggerOnHit: 0
+        hitRange: 0
+      fixedDirection:
+        activeDistance: 0
+        speedFly: 0
+        triggerOnHit: 0
+        hitRange: 0
+      flyOutAndBack:
+        activeDistance: 0
+        speedFly: 0
+        triggerOnHit: 0
+        hitRange: 0
+      bounce:
+        maxBounces: 
+        maxBounceCanChange: 0
+        speedFly: 0
+        bounceRange: 0
+        triggerOnHit: 0
+      aoe:
+        aoePos: 0
+        aoeRange: 0
+        maxHitNum: 0
+        lifeTime: 0
+        triggerOnHit: 0
+        canHitMultiTime: 0
+      channelling:
+        timeChanneling: 0
+        tickInterval: 0
+        tickTimes: 0
+        triggerRightAway: 0
+      crowdControl:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        controlType: 0
+      heal:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        healing: []
+        extraMaxHpPercentage: []
+        extraCurrentHpPercentage: []
+        extraMissingHpPercentage: []
+        healingCanChange: 0
+        extraMaxHpPercentageCanChange: 0
+        extraCurrentHpPercentageCanChange: 0
+        extraMissingHpPercentageCanChange: 0
+      shield:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        maxHit: 
+        maxHitCanChange: 0
+        shieldAmount: []
+        extraMaxHpPercentage: []
+        extraCurrentHpPercentage: []
+        extraMissingHpPercentage: []
+        extraADPercentage: []
+        extraAPPercentage: []
+        shieldAmountCanChange: 0
+        extraMaxHpPercentageCanChange: 0
+        extraCurrentHpPercentageCanChange: 0
+        extraMissingHpPercentageCanChange: 0
+        extraADPercentageCanChange: 0
+        extraAPPercentageCanChange: 0
+      dodge:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        dodgeLifetime: []
+        dodgeLifetimeCanChange: 0
+      increaseCritChance:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        criticalChanceAdd: []
+        criticalChanceAddCanChange: 0
+      increaseCritDMG:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        criticalDamageAdd: []
+        criticalDamageAddCanChange: 0
+      increaseAD:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        attackDamageAdd: []
+        attackDamageMult:
+        - 0.02
+        attackDamageAddCanChange: 0
+        attackDamageMultCanChange: 0
+      increaseAP:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        abilityDamageAdd:
+        - 2
+        abilityDamageMult: []
+        abilityDamageAddCanChange: 0
+        abilityDamageMultCanChange: 0
+      increaseAS:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        attackSpeedMult: []
+        attackSpeedMultCanChange: 0
+      increaseAR:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        armorAdd:
+        - 25
+        armorMult: []
+        armorAddCanChange: 0
+        armorMultCanChange: 0
+      increaseMR:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        magicResistanceAdd:
+        - 25
+        magicResistanceMult: []
+        magicResistanceAddCanChange: 0
+        magicResistanceMultCanChange: 0
+      decreaseAS:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        attackSpeedMult: []
+        attackSpeedMultCanChange: 0
+      decreaseAR:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        armorAdd: []
+        armorMult: []
+        armorAddCanChange: 0
+        armorMultCanChange: 0
+      decreaseMR:
+        buffID: 
+        buffOn: 0
+        buffRange: 0
+        maxHitNum: 0
+        haveLifeTime: 0
+        lifeTime: []
+        destroyOnLifeEnding: 0
+        addType: 0
+        maxStackUp: 0
+        lifeTimeCanChange: 0
+        magicResistanceAdd: []
+        magicResistanceMult: []
+        magicResistanceAddCanChange: 0
+        magicResistanceMultCanChange: 0
+  _isEquipped: 0
+  _itemPassive: {fileID: 0}
+  _isActive: 0
+  _cooldown: 0
+  stackCount: 0
+--- !u!114 &4837876995417705603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e919b4734aff2874d9f6435b274655c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDragDrop: 0
+  currentParent: {fileID: 0}
+  _selectingDropChampion: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  posY: 0
+--- !u!114 &4957716010189743833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 2150502977171065262}
+  - {fileID: 7739312077368003247}
+  - {fileID: 7619861187992274876}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &7739312077368003247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790644737175147194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
